@@ -39,10 +39,17 @@ https://www.tu-darmstadt.de/
 
 The data is available on our [public fileserver](http://public.ukp.informatik.tu-darmstadt.de/www19-xling-qr).
 
-A drescription will follow shortly.
+  - _askubuntu-human-translations_: This folder contains the human translations of the AskUbuntu dev/test queries
+  - _backtranslations-nmt-training_: Contains the parallel sentences obtained by translating titles from AskUbuntu and StackOverflow (java+python splits) to German using the standard en->de Transformer model
+  - _rcnn-data_
+    - _StackExchange-Monolingual_: The StackOverflow dataset (monolingual)
+    - _StackExchange-Monolingual-Paraphrases_: The StackOverflow dataset with paraphrases obtained by backtranslating titles of query questions from en to de and back to en (GT)
+    - _AskUbuntu-Monolingual-Paraphrases_: The AskUbuntu dataset with paraphrases
+    - _Translations_
+      - _AskUbuntu-de-en(GT)_, _AskUbuntu-de-en(TR-CQA)_, etc.: Titles of questions that were translated from German back to English using GT, TR-CQA, etc.
 
 
 ## Usage
 
-The source code of our RCNN adaptation will be made available shortly.
+The source code of our RCNN adaptation is available here: [RCNN-adaptation](./RCNN-adaptation)
 
